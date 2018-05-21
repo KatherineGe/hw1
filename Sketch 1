@@ -1,0 +1,61 @@
+
+int led = 13;
+int led2 = 8;
+int led3 = 5;
+int led4 = 7;
+void setup() {
+  pinMode(led, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(led, HIGH);
+  digitalWrite(led4, HIGH);
+  delay(300);
+
+  digitalWrite(led2, HIGH);
+  digitalWrite(led3, HIGH);
+  delay(500);
+
+  digitalWrite(led2, LOW);
+
+  delay(100);
+
+  digitalWrite(led4, LOW);
+
+  delay(600);
+  
+  digitalWrite(led, LOW);
+  digitalWrite(led2, HIGH);
+
+  delay(2000);
+
+  digitalWrite(led, HIGH);
+  delay(300);
+
+  digitalWrite(led3, HIGH);
+  digitalWrite(led4, HIGH);
+  delay(500);
+
+  digitalWrite(led3, LOW);
+
+  delay(200);
+  
+  digitalWrite(led4, LOW);
+  delay(500);
+
+  digitalWrite(led2, LOW);
+
+  delay(200);
+
+  digitalWrite(led3, HIGH);
+  delay(100);
+
+  digitalWrite(led3, LOW);
+
+  delay(100);
+  digitalWrite(led, LOW);
+
+  delay(2000);
+}
+
+
